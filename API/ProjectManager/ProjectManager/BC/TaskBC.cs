@@ -27,6 +27,7 @@ namespace ProjectManager.BC
                 {
                     TaskId = x.Task_ID,
                     Task_Name = x.Task_Name,
+                    Project_ID = x.Project_ID,
                     ParentTaskName = dbContext.ParentTasks.Where(y => y.Parent_ID == x.Parent_ID).FirstOrDefault().Parent_Task_Name,
                     Start_Date = x.Start_Date,
                     End_Date = x.End_Date,

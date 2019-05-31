@@ -247,3 +247,6 @@ C:\Users\Administrator\Desktop\Final Assignment\ProjectManager\API\ProjectManage
 C:\Users\Administrator\Desktop\Final Assignment\ProjectManager\API\ProjectManager\ProjectManager\obj\Debug\ProjectManager.csproj.CopyComplete
 C:\Users\Administrator\Desktop\Final Assignment\ProjectManager\API\ProjectManager\ProjectManager\obj\Debug\ProjectManager.dll
 C:\Users\Administrator\Desktop\Final Assignment\ProjectManager\API\ProjectManager\ProjectManager\obj\Debug\ProjectManager.pdb
+C:\Users\Administrator\Desktop\Final Assignment\ProjectManager\API\ProjectManager\ProjectManager\bin\System.Web.Cors.dll
+C:\Users\Administrator\Desktop\Final Assignment\ProjectManager\API\ProjectManager\ProjectManager\bin\System.Web.Http.Cors.dll
+C:\Users\Administrator\Desktop\Final Assignment\ProjectManager\API\ProjectManager\ProjectManager\bin\System.Web.Http.Cors.xml

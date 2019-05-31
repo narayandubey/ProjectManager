@@ -1,8 +1,8 @@
 export class User {
-    public userId: number;
-    public firstName: string;
-    public lastName: string;
-    public employeeId: string;
-    public projectId: number;
-    public taskId: number;
+    public UserId: number;
+    public FirstName: string;
+    public LastName: string;
+    public EmployeeId: string;
+    public ProjectId: number;
+    public TaskId: number;
 }

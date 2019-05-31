@@ -1,18 +1,18 @@
 import { User } from "./user";
 
 export class Task {
-    public start_Date: string;
-    public end_Date: string;
-    public task_Name: string;
-    public project_ID: number;
-    public taskId: number;
-    public priority: number;
-    public parent_ID: number;
-    public status: number;
-    public user: User;
-    public parentTaskName: string;
+    public Start_Date: string;
+    public End_Date: string;
+    public Task_Name: string;
+    public Project_ID: number;
+    public TaskId: number;
+    public Priority: number;
+    public Parent_ID: number;
+    public Status: number;
+    public User: User;
+    public ParentTaskName: string;
 
     constructor() {
-        this.user = new User();
+        this.User = new User();
     }
 }

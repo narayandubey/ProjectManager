@@ -1,4 +1,4 @@
 export class ParentTask {
-    public parentTaskId: number;
-    public parentTaskName: string;
+    public ParentTaskId: number;
+    public ParentTaskName: string;
 }

@@ -1,15 +1,15 @@
 import { User } from "./user";
 
 export class Project {
-    public projectId: string;
-    public projectName: string;
-    public projectStartDate: string;
-    public projectEndDate: string;
-    public priority: number;
-    public user: User;
-    public noOfTasks:number;
-    public noOfCompletedTasks:number;
+    public ProjectId: string;
+    public ProjectName: string;
+    public ProjectStartDate: string;
+    public ProjectEndDate: string;
+    public Priority: number;
+    public User: User;
+    public NoOfTasks:number;
+    public NoOfCompletedTasks:number;
     constructor(){
-        this.user=new User();
+        this.User=new User();
     }
 }

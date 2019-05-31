@@ -7,10 +7,10 @@ using System.Web.Http;
 using ProjectManager.BC;
 using ProjectManager.ActionFilters;
 using DAC = ProjectManager.DAC;
+using System.Web.Http.Cors;
 
 namespace ProjectManager.Controllers
 {
-
     public class UserController : ApiController
     {
         UserBC _userObjBC = null;
@@ -29,6 +29,7 @@ namespace ProjectManager.Controllers
         [ProjectManagerLogFilter]
         [ProjectManagerExceptionFilter]
         [Route("api/user")]
+        
         public JSonResponse GetUser()
         {
             List<User> Users = _userObjBC.GetUser();

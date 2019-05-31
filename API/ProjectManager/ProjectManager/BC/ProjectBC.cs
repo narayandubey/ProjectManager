@@ -51,13 +51,9 @@ namespace ProjectManager.BC
                 };
                 dbContext.Projects.Add(proj);
                 dbContext.SaveChanges();
-                var editDetails = (from editUser in dbContext.Users
-                                   where editUser.User_ID.ToString().Contains(project.User.UserId.ToString())
-                                   select editUser).First();
-                // Modify existing records
-                if (editDetails != null)
+                if(dbContext.Users.Where(user=> user.User_ID.ToString().Contains(project.User.UserId.ToString())).Count() > 0)
                 {
-                    editDetails.Project_ID = proj.Project_ID;
+                    dbContext.Users.Where(user => user.User_ID.ToString().Contains(project.User.UserId.ToString())).FirstOrDefault().Project_ID = proj.Project_ID;
                 }
                 return dbContext.SaveChanges();
             }
@@ -68,8 +64,8 @@ namespace ProjectManager.BC
             using (dbContext)
             {
                 var editProjDetails = (from editProject in dbContext.Projects
-                                   where editProject.Project_ID.ToString().Contains(project.ProjectId.ToString())
-                                   select editProject).First();
+                                       where editProject.Project_ID.ToString().Contains(project.ProjectId.ToString())
+                                       select editProject).First();
                 // Modify existing records
                 if (editProjDetails != null)
                 {
@@ -78,7 +74,15 @@ namespace ProjectManager.BC
                     editProjDetails.End_Date = project.ProjectEndDate;
                     editProjDetails.Priority = project.Priority;
                 }
-                
+
+                var resetDetails = (from resetUser in dbContext.Users
+                                   where resetUser.Project_ID.ToString().Contains(project.ProjectId.ToString())
+                                   select resetUser).First();
+                // Modify existing records
+                if (resetDetails != null)
+                {
+                    resetDetails.Project_ID = null;
+                }
 
                 var editDetails = (from editUser in dbContext.Users
                                    where editUser.User_ID.ToString().Contains(project.User.UserId.ToString())
@@ -96,9 +100,9 @@ namespace ProjectManager.BC
         {
             using (dbContext)
             {
-               
+
                 var editDetails = (from proj in dbContext.Projects
-                                   where proj.Project_ID==project.ProjectId
+                                   where proj.Project_ID == project.ProjectId
                                    select proj).First();
                 // Delete existing record
                 if (editDetails != null)
