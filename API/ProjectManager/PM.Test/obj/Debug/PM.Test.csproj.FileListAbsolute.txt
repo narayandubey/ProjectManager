@@ -79,3 +79,6 @@ C:\Users\Administrator\Desktop\Final Assignment\ProjectManager\API\ProjectManage
 C:\Users\Administrator\Desktop\Final Assignment\ProjectManager\API\ProjectManager\PM.Test\obj\Debug\PM.Test.csproj.CopyComplete
 C:\Users\Administrator\Desktop\Final Assignment\ProjectManager\API\ProjectManager\PM.Test\obj\Debug\PM.Test.dll
 C:\Users\Administrator\Desktop\Final Assignment\ProjectManager\API\ProjectManager\PM.Test\obj\Debug\PM.Test.pdb
+C:\Users\Administrator\Desktop\Final Assignment\ProjectManager\API\ProjectManager\PM.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\Administrator\Desktop\Final Assignment\ProjectManager\API\ProjectManager\PM.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\Administrator\Desktop\Final Assignment\ProjectManager\API\ProjectManager\PM.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll

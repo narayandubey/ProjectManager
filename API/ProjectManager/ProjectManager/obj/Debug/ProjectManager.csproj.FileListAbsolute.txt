@@ -242,7 +242,6 @@ C:\Users\Administrator\Desktop\Final Assignment\ProjectManager\API\ProjectManage
 C:\Users\Administrator\Desktop\Final Assignment\ProjectManager\API\ProjectManager\ProjectManager\bin\System.Web.Http.xml
 C:\Users\Administrator\Desktop\Final Assignment\ProjectManager\API\ProjectManager\ProjectManager\bin\System.Web.Http.WebHost.xml
 C:\Users\Administrator\Desktop\Final Assignment\ProjectManager\API\ProjectManager\ProjectManager\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\Administrator\Desktop\Final Assignment\ProjectManager\API\ProjectManager\ProjectManager\obj\Debug\ProjectManager.csprojAssemblyReference.cache
 C:\Users\Administrator\Desktop\Final Assignment\ProjectManager\API\ProjectManager\ProjectManager\obj\Debug\ProjectManager.csproj.CoreCompileInputs.cache
 C:\Users\Administrator\Desktop\Final Assignment\ProjectManager\API\ProjectManager\ProjectManager\obj\Debug\ProjectManager.csproj.CopyComplete
 C:\Users\Administrator\Desktop\Final Assignment\ProjectManager\API\ProjectManager\ProjectManager\obj\Debug\ProjectManager.dll
