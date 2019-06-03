@@ -92,8 +92,8 @@ namespace PM.Test
         {
             var context = new MockProjectManagerEntities();
             var user = new ProjectManager.Models.User();
-            user.FirstName = "ankita";
-            user.LastName = "ghosh";
+            user.FirstName = "disha";
+            user.LastName = "shaw";
             user.EmployeeId = "123456";
             user.UserId = 123;
             var controller = new UserController(new ProjectManager.BC.UserBC(context));
