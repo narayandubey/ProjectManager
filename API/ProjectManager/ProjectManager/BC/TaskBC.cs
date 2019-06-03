@@ -120,7 +120,7 @@ namespace ProjectManager.BC
                 // Modify existing records
                 if (editDetailsUser != null)
                 {
-                    editDetails.Task_ID = task.TaskId;
+                    editDetailsUser.Task_ID = task.TaskId;
                 }
                 return dbContext.SaveChanges();
             }
