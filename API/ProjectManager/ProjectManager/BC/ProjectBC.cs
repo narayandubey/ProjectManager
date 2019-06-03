@@ -100,7 +100,19 @@ namespace ProjectManager.BC
         {
             using (dbContext)
             {
-
+                var taskdetail = (from tsk in dbContext.Tasks
+                                   where tsk.Project_ID == project.ProjectId
+                                   select tsk);
+                if(taskdetail != null && taskdetail.Count()> 0)
+                {
+                    var userdetail = dbContext.Users.Where(user => taskdetail.Any(tsk => tsk.Task_ID == user.Task_ID));
+                   if(userdetail != null)
+                    {
+                        userdetail.ToList().ForEach(user => user.Task_ID = null);
+                    }
+                    
+                    dbContext.Tasks.RemoveRange(taskdetail);
+                }
                 var editDetails = (from proj in dbContext.Projects
                                    where proj.Project_ID == project.ProjectId
                                    select proj).First();
