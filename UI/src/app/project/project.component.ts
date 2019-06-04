@@ -167,7 +167,7 @@ export class ProjectComponent implements OnInit {
     this.buttonName = 'Update';
     this.selectedUser = this.users.find(x => x.UserId === project.User.UserId).FirstName;
     this.projectToAdd = project;
-    if (project.projectStartDate && project.projectEndDate) {
+    if (project.ProjectStartDate && project.ProjectEndDate) {
       this.projectToAdd.ProjectStartDate = moment(this.projectToAdd.ProjectStartDate).format('MM-DD-YYYY').toString();
       this.projectToAdd.ProjectEndDate = moment(this.projectToAdd.ProjectEndDate).format('MM-DD-YYYY').toString();
       this.startEndDateEnable = true;
